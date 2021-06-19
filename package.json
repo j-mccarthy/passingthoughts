@@ -4,7 +4,10 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy",
+    "seed": "cross-env ELEVENTY_ENV=seed eleventy"
   },
   "keywords": [],
   "author": "",
