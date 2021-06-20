@@ -4,10 +4,10 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
-    "build": "cross-env ELEVENTY_ENV=prod eleventy",
-    "seed": "cross-env ELEVENTY_ENV=seed eleventy"
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
